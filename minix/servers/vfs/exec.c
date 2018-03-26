@@ -218,6 +218,7 @@ int pm_exec(vir_bytes path, size_t path_len, vir_bytes frame, size_t frame_len,
   execi.args.stack_size = DEFAULT_STACK_LIMIT;
 
   lookup_init(&resolve, fullpath, PATH_NOFLAGS, &execi.vmp, &execi.vp);
+  printf("arquivo: %s\n", fullpath);
 
   resolve.l_vmnt_lock = VMNT_READ;
   resolve.l_vnode_lock = VNODE_READ;
