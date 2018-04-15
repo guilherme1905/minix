@@ -57,7 +57,7 @@ get_proc_data(pid_t pid, struct minix_proc_data * mpd)
  * future, this file may be extended with additional fields again.
  */
 static void
-pid_psinfo(int slot)
+	pid_psinfo(int slot)
 {
 	struct minix_proc_data mpd;
 	struct vm_usage_info vui;
